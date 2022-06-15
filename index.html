@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container1">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="container2">
+        <div class="topSection">
+          <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        </div>
+        <div class="container2a">
+          <div class="mainSection">
+            <div class="sections">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="firstName"
+                id="firstName"
+              />
+              <p id="errFirstName">First Name cannot empty</p>
+            </div>
+            <div class="sections">
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="lastName"
+                id="lastName"
+              />
+              <p id="errLastName">Last Name cannot empty</p>
+            </div>
+            <div class="sections">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="email"
+                id="email"
+              />
+              <p id="errEmail">Looks like this is not an email</p>
+            </div>
+            <div class="sections">
+              <input
+                type="password"
+                placeholder="Password"
+                class="password"
+                id="password"
+              />
+              <p id="errPassword">Password cannot be empty</p>
+            </div>
+            <button class="btn" id="btn">Claim your free trial</button>
+            <small
+              >By clicking the button, you are agreeing to our
+              <b>Terms and Services</b></small
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

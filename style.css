@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  font-size: 1em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 6em auto 2em;
+  color: white;
+}
+.container1 h1 {
+  font-size: 2.8rem;
+}
+.container1 p {
+  font-size: 1.1rem;
+  margin-top: 1.8em;
+}
+.container2a {
+  background-color: white;
+  border-radius: 0.5em;
+  border: 2px solid rgb(234, 233, 233);
+  box-shadow: 0 0.5em rgba(107, 106, 106, 0.4);
+}
+.mainSection {
+  width: 80%;
+  margin: 2em auto;
+}
+.topSection {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 300;
+  border-radius: 0.5em;
+  padding: 1.3em 0;
+  margin-bottom: 2em;
+  box-shadow: 0 0.5em rgba(107, 106, 106, 0.4);
+}
+.topSection p {
+  opacity: 0.8;
+}
+.topSection b {
+  opacity: 1;
+}
+.mainSection input {
+  padding: 1em 15em 1em 1.2em;
+  border-radius: 0.5em;
+  border: 2px solid rgb(246, 243, 243);
+}
+input::placeholder {
+  font-weight: 600;
+  color: gray;
+  font-size: 0.8rem;
+}
+.sections {
+  margin-bottom: 1.5em;
+}
+.mainSection p {
+  font-size: 0.65rem;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  display: none;
+}
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  padding: 1.2em 8em;
+  border: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  margin-bottom: 1.3em;
+  box-shadow: 0 0.2em hsl(154, 56%, 44%);
+}
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+small {
+  font-size: 0.6rem;
+  color: gray;
+  display: block;
+  text-align: center;
+}
+.mainSection b {
+  color: hsl(0, 100%, 74%);
+}
+@media (max-width: 920px) {
+  .main {
+    grid-template-columns: 30em;
+    gap: 3em;
+    margin: 5em auto 2em;
+    text-align: center;
+  }
+  .topSection {
+    font-size: 0.9rem;
+    padding: 1.9em 10em;
+  }
+  .mainSection input {
+    padding: 0.8em 14.6em 0.8em 1em;
+  }
+  .btn {
+    padding: 1.2em 7.7em;
+  }
+  .container1 h1 {
+    font-size: 3.4rem;
+  }
+  .container1 p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    grid-template-columns: 18.5em;
+    grid-template-rows: 1fr 2fr;
+    gap: 0;
+    margin: 0 auto 2em;
+    text-align: center;
+  }
+  .container1 h1 {
+    font-size: 1.5rem;
+  }
+  .container1 p {
+    font-size: 0.8rem;
+    margin-top: 2em;
+  }
+  .topSection {
+    font-size: 0.75rem;
+    padding: 1.9em 6em;
+  }
+  .mainSection input {
+    padding: 0.8em 3.8em 0.8em 1em;
+  }
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+  .btn {
+    padding: 1.2em 2.3em;
+  }
+}
+
+@media (max-width: 280px) {
+  .main {
+    grid-template-columns: 16.5em;
+  }
+  .mainSection input {
+    padding: 0.8em 2em 0.8em 1em;
+  }
+  .btn {
+    padding: 1.2em 1.3em;
+  }
+  .topSection {
+    font-size: 0.75rem;
+    padding: 1.9em 5em;
+  }
+}
